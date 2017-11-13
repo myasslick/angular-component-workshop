@@ -1,11 +1,13 @@
 {
-  "name": "@ngpakistan/component-workshop",
+  "name": "@ngpakistan/simple-ui-components",
   "version": "1.0.0",
-  "description": "UI Components created for the Angular Pakistan Components Workshop",
+  "description": "Simple UI Components created for the Angular Pakistan Components Workshop",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && npm run linklib && npm run watch && cd demo && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && ngc"
+    "build": "rimraf dist && ngc && cpx package.json ./dist",
+    "linklib": "cd dist && npm link && rimraf node_modules && cd .. && cd demo && npm link @ngpakistan/simple-ui-components"
   },
   "repository": {
     "type": "git",
@@ -23,21 +25,25 @@
   "peerDependencies": {
     "@angular/core": "^5.0.0",
     "@angular/forms": "^5.0.0",
+    "@angular/common": "^5.0.0",
     "rxjs": "^5.5.2",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@angular/forms": "^5.0.0",
-    "@angular/core": "^5.0.0",
+    "@angular/cli": "^1.5.0",
+    "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/compiler-cli": "^5.0.0",
-    "rollup": "^0.51.5",
-    "typescript": "~2.4.2",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
     "codelyzer": "~3.2.0",
+    "cpx": "^1.5.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.51.5",
+    "rxjs": "^5.5.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "zone.js": "0.8.18",
-    "rxjs": "^5.5.2",
-    "rimraf": "^2.6.2"
+    "typescript": "~2.4.2",
+    "zone.js": "0.8.18"
   }
 }

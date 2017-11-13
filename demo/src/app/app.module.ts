@@ -3,23 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TextMaskDirective } from './directives/text-mask/text-mask.directive';
-import { SmartSelectComponent } from './directives/smart-select/smart-select.component';
-import { OutsideClickDirective } from './directives/smart-select/outside-click.directive';
-import { SearchPipe } from './directives/smart-select/pipes/search.pipe';
+import { SimpleUIComponentsModule } from '@ngpakistan/simple-ui-components';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TextMaskDirective,
-    SmartSelectComponent,
-    OutsideClickDirective,
-    SearchPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    SimpleUIComponentsModule
   ],
   providers: [
   ],

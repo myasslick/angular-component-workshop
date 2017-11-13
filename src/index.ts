@@ -1,1 +1,1 @@
-export { WorkShopModule } from './workshop.module';
+export { SimpleUIComponentsModule } from './simple-ui-components.module';
