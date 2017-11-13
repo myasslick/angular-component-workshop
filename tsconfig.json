@@ -1,19 +1,25 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
+    "compilerOptions": {
+      "declaration": true,
+      "module": "es2015",
+      "target": "es5",
+      "baseUrl": ".",
+      "stripInternal": true,
+      "experimentalDecorators": true,
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "lib": ["es2015", "dom"],
+      "skipLibCheck": true,
+      // don't auto-discover @types/node, it results in a ///<reference in the .d.ts output
+      "types": []
+    },
+    "files": [
+      "./src/index.ts"
     ],
-    "lib": [
-      "es2017",
-      "dom"
-    ]
+    "angularCompilerOptions": {
+      "annotateForClosureCompiler": true,
+      "strictMetadataEmit": true,
+      "skipTemplateCodegen": true
+    }
   }
-}

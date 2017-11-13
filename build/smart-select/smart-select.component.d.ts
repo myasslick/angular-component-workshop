@@ -1,0 +1,33 @@
+import { OnInit, ElementRef } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
+export declare class SmartSelectComponent implements OnInit, ControlValueAccessor {
+    private element;
+    items: any;
+    itemLimit: number;
+    showSearch: boolean;
+    placeholder: string;
+    valueProp: any;
+    displayProp: any;
+    dropdownDirection: string;
+    private onTouchedCallback;
+    private onChangeCallback;
+    private open;
+    private searchText;
+    private selectedItem;
+    private activeItem;
+    constructor(element: ElementRef);
+    ngOnInit(): void;
+    writeValue(value: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    toggleOpen(): void;
+    openDropDown(): void;
+    closeDropdown(): void;
+    showAll(): void;
+    selectItem(item: any): void;
+    selectNext(): void;
+    selectPrevious(): void;
+    showFooter(): boolean;
+    handleKey(e: any): void;
+}
