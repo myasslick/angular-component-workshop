@@ -4,7 +4,7 @@
   "description": "Simple UI Components created for the Angular Pakistan Components Workshop",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && npm run linklib && npm run watch && cd demo && npm start",
+    "start": "npm run build && npm run linklib && cd demo && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && ngc && cpx package.json ./dist",
     "linklib": "cd dist && npm link && rimraf node_modules && cd .. && cd demo && npm link @ngpakistan/simple-ui-components"

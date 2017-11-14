@@ -7,8 +7,14 @@
 
       <div class="form-group">
         <label class="control-label">Smart Select</label>
-        <smart-select name="someValue" [items]="countries" [itemLimit]="200" [showSearch]="true" [placeholder]="'Select a Country'"
-          [(ngModel)]="model.country" #country="ngModel" name="country" >
+        <smart-select name="someValue" 
+        [items]="countries" 
+        [itemLimit]="200" 
+        [showSearch]="true" 
+        [placeholder]="'Select a Country'"
+        [(ngModel)]="model.country" 
+        #country="ngModel" 
+        name="country" >
         </smart-select>
       </div>
 

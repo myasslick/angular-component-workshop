@@ -8,7 +8,7 @@ import { AppModel } from './app.model';
 })
 export class AppComponent {
 
-  mask = '00000-0000-0';
+  mask = '00000-0000-A';
   model: AppModel = new AppModel();
 
   countries = ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Anguilla', 'Antigua &amp; Barbuda', 'Argentina', 'Armenia',

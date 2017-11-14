@@ -121,7 +121,7 @@ export class SmartSelectComponent implements OnInit, ControlValueAccessor {
   public selectedItem: any;
   private activeItem: any;
 
-  constructor(private element: ElementRef) {
+  constructor() {
   }
 
   ngOnInit() {
