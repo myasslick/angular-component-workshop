@@ -1,5 +1,5 @@
 {
-  "name": "@ngpakistan/simple-ui-components",
+  "name": "@ngpakistan/smart-ui",
   "version": "1.0.0",
   "description": "Simple UI Components created for the Angular Pakistan Components Workshop",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "npm run build && npm run linklib && cd demo && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && ngc && cpx package.json ./dist",
-    "linklib": "cd dist && npm link && rimraf node_modules && cd .. && cd demo && npm link @ngpakistan/simple-ui-components"
+    "linklib": "cd dist && npm link && rimraf node_modules && cd .. && cd demo && npm link @ngpakistan/smart-ui"
   },
   "repository": {
     "type": "git",

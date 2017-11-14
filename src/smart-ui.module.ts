@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TextMaskDirective } from './text-mask/text-mask.directive';
+import { SmartTextMaskDirective } from './smart-text-mask/smart-text-mask.directive';
 import { SmartSelectComponent } from './smart-select/smart-select.component';
 import { OutsideClickDirective } from './smart-select/outside-click.directive';
 import { SearchPipe } from './smart-select/pipes/search.pipe';
@@ -13,16 +13,16 @@ import { SearchPipe } from './smart-select/pipes/search.pipe';
         FormsModule
     ],
     exports: [
-        TextMaskDirective, 
+        SmartTextMaskDirective, 
         SmartSelectComponent,
         CommonModule
     ],
     declarations: [
-        TextMaskDirective, 
+        SmartTextMaskDirective, 
         SmartSelectComponent, 
         OutsideClickDirective, 
         SearchPipe
     ],
     providers: [],
 })
-export class SimpleUIComponentsModule { }
+export class SmartUIModule { }

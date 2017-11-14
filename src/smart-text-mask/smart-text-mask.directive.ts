@@ -2,9 +2,9 @@ import { Directive, HostListener, Input, ElementRef, HostBinding } from '@angula
 import { NgControl } from '@angular/forms';
 
 @Directive({
-  selector: '[text-mask]'
+  selector: '[smart-text-mask]'
 })
-export class TextMaskDirective {
+export class SmartTextMaskDirective {
 
   @HostBinding('placeholder')
   @Input()

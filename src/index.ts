@@ -1,1 +1,1 @@
-export { SimpleUIComponentsModule } from './simple-ui-components.module';
+export { SmartUIModule } from './smart-ui.module';

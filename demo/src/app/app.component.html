@@ -20,8 +20,12 @@
 
       <div class="form-group">
         <label class="control-label">Input Mask</label>
-        <input required [(ngModel)]="model.cnic" class="form-control has-error has-feedback" type="text" text-mask mask='{{mask}}'
-          #cnic="ngModel" name="cnic" />
+        <input required 
+        [(ngModel)]="model.cnic" 
+        class="form-control has-error has-feedback" 
+        type="text" 
+        smart-text-mask mask='{{mask}}' 
+        #cnic="ngModel" name="cnic" />
 
         <div *ngIf="cnic.invalid && (cnic.dirty || cnic.touched)" class="alert alert-danger">
           <div *ngIf="cnic.errors.required">

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SimpleUIComponentsModule } from '@ngpakistan/simple-ui-components';
+import { SmartUIModule } from '@ngpakistan/smart-ui';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { SimpleUIComponentsModule } from '@ngpakistan/simple-ui-components';
   imports: [
     BrowserModule,
     FormsModule,
-    SimpleUIComponentsModule
+    SmartUIModule
   ],
   providers: [
   ],
