@@ -23,6 +23,8 @@
     "angularCompilerOptions": {
       "annotateForClosureCompiler": true,
       "strictMetadataEmit": true,
-      "skipTemplateCodegen": true
+      "skipTemplateCodegen": true,
+      "flatModuleOutFile": "smart-ui.js",
+      "flatModuleId": "smart-ui"
     }
   }
