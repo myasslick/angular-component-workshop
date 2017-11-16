@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "target": "es5"
+    },
+    "angularCompilerOptions": {
+      "annotateForClosureCompiler": true,
+      "strictMetadataEmit": true,
+      "skipTemplateCodegen": true,
+      "flatModuleOutFile": "smart-ui.es5.js",
+      "flatModuleId": "smart-ui.es5"
+    }
+  }

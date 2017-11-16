@@ -7,25 +7,15 @@
 
       <div class="form-group">
         <label class="control-label">Smart Select</label>
-        <smart-select name="someValue" 
-        [items]="countries" 
-        [itemLimit]="200" 
-        [showSearch]="true" 
-        [placeholder]="'Select a Country'"
-        [(ngModel)]="model.country" 
-        #country="ngModel" 
-        name="country" >
+        <smart-select name="someValue" [items]="countries" [itemLimit]="200" [showSearch]="true" [placeholder]="'Select a Country'"
+          [(ngModel)]="model.country" #country="ngModel" name="country">
         </smart-select>
       </div>
 
       <div class="form-group">
-        <label class="control-label">Input Mask</label>
-        <input required 
-        [(ngModel)]="model.cnic" 
-        class="form-control has-error has-feedback" 
-        type="text" 
-        smart-text-mask mask='{{mask}}' 
-        #cnic="ngModel" name="cnic" />
+        <label class="control-label">Smart Input Mask</label>
+        <input required [(ngModel)]="model.cnic" class="form-control has-error has-feedback" type="text" smart-text-mask mask='{{mask}}'
+          #cnic="ngModel" name="cnic" />
 
         <div *ngIf="cnic.invalid && (cnic.dirty || cnic.touched)" class="alert alert-danger">
           <div *ngIf="cnic.errors.required">
@@ -36,11 +26,8 @@
           </div>
         </div>
       </div>
-
       <pre>{{model|json}}</pre>
-
       <!-- <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Submit</button> -->
-
     </form>
     <!-- /form -->
   </div>

@@ -6,7 +6,6 @@ import { SmartSelectComponent } from './smart-select/smart-select.component';
 import { OutsideClickDirective } from './smart-select/outside-click.directive';
 import { SearchPipe } from './smart-select/pipes/search.pipe';
 
-
 @NgModule({
     imports: [
         CommonModule,
