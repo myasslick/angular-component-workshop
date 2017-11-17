@@ -4,7 +4,7 @@
   "description": "Simple UI Components created for the Angular Pakistan Components Workshop",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && parallelshell \"npm run watch:src\" \"npm run start:demo\" ",
+    "start": "npm run build && link:lib &&parallelshell \"npm run watch:src\" \"npm run start:demo\" ",
     "start:demo": "cd demo && npm start",
     "watch:src": "ngc -p tsconfig.json -w",
     "test": "echo \"Error: no test specified\" && exit 1",
