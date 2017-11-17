@@ -4,32 +4,9 @@
     <p id="profile-name" class="profile-name-card"></p>
 
     <form class="form-signin" #myform="ngForm">
-
-      <div class="form-group">
-        <label class="control-label">Smart Select</label>
-        <smart-select name="someValue" [items]="countries" [itemLimit]="200" [showSearch]="true" [placeholder]="'Select a Country'"
-          [(ngModel)]="model.country" #country="ngModel" name="country">
-        </smart-select>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label">Smart Input Mask</label>
-        <input required [(ngModel)]="model.cnic" class="form-control has-error has-feedback" type="text" smart-text-mask mask='{{mask}}'
-          #cnic="ngModel" name="cnic" />
-
-        <div *ngIf="cnic.invalid && (cnic.dirty || cnic.touched)" class="alert alert-danger">
-          <div *ngIf="cnic.errors.required">
-            Mask is required.
-          </div>
-          <div *ngIf="cnic.errors.invalidMask">
-            Mask is invalid
-          </div>
-        </div>
-      </div>
-      <pre>{{model|json}}</pre>
-      <!-- <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Submit</button> -->
     </form>
     <!-- /form -->
+    <h3 class="">Welcome to Angular Pakistan Workshop :-)</h3>
   </div>
   <!-- /card-container -->
 </div>
